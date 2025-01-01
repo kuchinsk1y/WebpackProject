@@ -50,7 +50,7 @@ module.exports = {
         test: /\.(jpe?g|gif|png|ico|svg)$/i,
         type: 'asset/resource',  // Обрабатываем изображения как ресурсы
         generator: {
-          filename: 'images/[name].[hash][ext][query]', // Указываем путь к изображениям в output
+          filename: 'images/[name].[hash][ext][query]',
         },
       },
     ],
@@ -72,12 +72,12 @@ module.exports = {
   devServer: {
     static: './dist',
     open: true,
-    hot: true, // поддержка горячей замены
-    port: 8080, // убедитесь, что порт не занят другим процессом
-    host: 'localhost', // указание хоста
+    hot: true,
+    port: 8080,
+    host: 'localhost',
     watchFiles: ['./src/**/*'],
     client: {
-      webSocketURL: 'ws://localhost:8080/ws', // проверка правильности WebSocket URL
+      webSocketURL: 'ws://localhost:8080/ws',
     },
   },
   
